@@ -1,0 +1,11 @@
+{
+  "name": "S1: Brute force from an unknown device",
+  "description": "Student ali fails the login 4 times from an unknown device and asks for the student database.",
+  "facts": [
+    ["login", "ali", "dev7"],
+    ["failed_attempts", "ali", 4],
+    ["requests", "ali", "student_db"]
+  ],
+  "goal": ["decision", "ali", "student_db", "deny"],
+  "expected": "deny"
+}

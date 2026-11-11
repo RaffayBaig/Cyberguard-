@@ -1,0 +1,10 @@
+{
+  "name": "S2: Unknown device, public page",
+  "description": "Faculty member sara logs in from an unknown device and only opens a public page. failed_attempts is not given, so the frame default (0) is used.",
+  "facts": [
+    ["login", "sara", "dev9"],
+    ["requests", "sara", "course_page"]
+  ],
+  "goal": ["decision", "sara", "course_page", "flag"],
+  "expected": "flag"
+}

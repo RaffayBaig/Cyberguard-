@@ -1,0 +1,11 @@
+{
+  "name": "S4: Student asks for an admin-only resource",
+  "description": "Student ali logs in from a trusted device with no failed attempts but asks for the admin panel.",
+  "facts": [
+    ["login", "ali", "dev2"],
+    ["failed_attempts", "ali", 0],
+    ["requests", "ali", "admin_panel"]
+  ],
+  "goal": ["decision", "ali", "admin_panel", "deny"],
+  "expected": "deny"
+}

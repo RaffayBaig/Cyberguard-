@@ -1,0 +1,11 @@
+{
+  "name": "S7: Brute force, trusted device, critical page",
+  "description": "Student ali fails the login 5 times from a trusted device and asks for the grades database. The device is known, so only the failed attempts make the login suspicious.",
+  "facts": [
+    ["login", "ali", "dev2"],
+    ["failed_attempts", "ali", 5],
+    ["requests", "ali", "grades_db"]
+  ],
+  "goal": ["decision", "ali", "grades_db", "deny"],
+  "expected": "deny"
+}

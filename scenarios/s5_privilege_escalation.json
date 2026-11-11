@@ -1,0 +1,11 @@
+{
+  "name": "S5: Privilege escalation attempt",
+  "description": "Student ali asks for the admin panel and also tries to change his own role.",
+  "facts": [
+    ["login", "ali", "dev2"],
+    ["requests", "ali", "admin_panel"],
+    ["role_change_attempt", "ali"]
+  ],
+  "goal": ["decision", "ali", "admin_panel", "deny"],
+  "expected": "deny"
+}

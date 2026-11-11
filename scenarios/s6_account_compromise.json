@@ -1,0 +1,11 @@
+{
+  "name": "S6: Account compromise on a public page",
+  "description": "Faculty member sara fails 5 times and then logs in from an unknown device to open a public page. The page is harmless but the account looks stolen.",
+  "facts": [
+    ["login", "sara", "dev9"],
+    ["failed_attempts", "sara", 5],
+    ["requests", "sara", "course_page"]
+  ],
+  "goal": ["decision", "sara", "course_page", "deny"],
+  "expected": "deny"
+}

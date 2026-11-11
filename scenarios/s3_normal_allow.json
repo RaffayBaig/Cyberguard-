@@ -1,0 +1,10 @@
+{
+  "name": "S3: Normal admin access",
+  "description": "Admin hamza logs in from a trusted device and opens the student database. failed_attempts is not given, so the frame default (0) is used.",
+  "facts": [
+    ["login", "hamza", "dev1"],
+    ["requests", "hamza", "student_db"]
+  ],
+  "goal": ["decision", "hamza", "student_db", "allow"],
+  "expected": "allow"
+}
